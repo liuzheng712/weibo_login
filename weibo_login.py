@@ -52,7 +52,7 @@ __version__ = "0.1 beta"
 
 
 class weibo_login(object):
-    def __init__(self, username, pwd, cookie_file):
+    def __init__(self, username, pwd, cookie_file='/tmp/weibo_login_cookies.dat'):
         self.login(username, pwd, cookie_file)
 
     def getHTML(self, url):
