@@ -228,6 +228,7 @@ class weibo_login(object):
 if __name__ == '__main__':
     username = ''
     pwd = ''
-    cookie_file = 'weibo_login_cookies.dat'
+    # the cookie_file name must be weibo_login_cookies.dat
+    cookie_file = '/tmp/weibo_login_cookies.dat'
     html = weibo_login(username, pwd, cookie_file)
     print html.getHTML('http://www.weibo.com/kaifulee')
